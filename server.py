@@ -17,7 +17,7 @@ async def get_epss_api_description(ctx: Context):
 
 
 @mcp.tool()
-async def query_api(ctx: Context, params):
+async def query_api(ctx: Context, params: dict):
     """Run a query against the base URL of the EPSS API
     :param ctx: MCP context
     :param params: the HTTP params to be appended to the base URL
